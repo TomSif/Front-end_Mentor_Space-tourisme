@@ -1,1 +1,103 @@
 @import "tailwindcss";
+
+/* BelleFair */
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/bellefair-v15-latin-regular.woff2") format("woff2");
+}
+/* Barlow */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/barlow-v13-latin-regular.woff2") format("woff2");
+}
+/* Barlow Condensed*/
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/barlow-condensed-v13-latin-regular.woff2") format("woff2");
+}
+
+@theme {
+  /* fonts collection */
+  --font-bellfair: "Bellefair", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+  --font-barlow-c: "Barlow Condensed", sans-serif;
+
+  /* color COLLECTION */
+  --color-white: #ffffff;
+  --color-blue-300: #d0d6f9;
+  --color-blue-900: #0b0d17;
+}
+
+/*typography collection */
+@utility text-preset-1 {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 9rem;
+  line-height: 172%;
+  letter-spacing: 0em;
+}
+@utility text-preset-2 {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 6.25rem;
+  line-height: 114.6%;
+  letter-spacing: 0em;
+}
+@utility text-preset-3 {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 3.55rem;
+  line-height: 64.2%;
+  letter-spacing: 0em;
+}
+@utility text-preset-4 {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 36.7%;
+  letter-spacing: 0em;
+}
+@utility text-preset-5 {
+  font-family: var(--font-barlow-c);
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 33.6%;
+  letter-spacing: 0.14em;
+}
+@utility text-preset-6 {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 32.1%;
+  letter-spacing: 0em;
+}
+@utility text-preset-7 {
+  font-family: var(--font-barlow-c);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 16.8%;
+  letter-spacing: 0.14em;
+}
+@utility text-preset-8 {
+  font-family: var(--font-barlow-c);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19.2%;
+  letter-spacing: 0.125em;
+}
+@utility text-preset-9 {
+  font-family: var(--font-barlow);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 180%;
+  letter-spacing: 0em;
+}
