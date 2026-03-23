@@ -24,6 +24,14 @@
   font-weight: 400;
   src: url("/fonts/barlow-condensed-v13-latin-regular.woff2") format("woff2");
 }
+/* Barlow Condensed bold*/
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/barlow-condensed-v13-latin-700.woff2") format("woff2");
+}
 
 @theme {
   /* fonts collection */
@@ -91,7 +99,14 @@
   font-family: var(--font-barlow-c);
   font-weight: 400;
   font-size: 1rem;
-  line-height: 19.2%;
+  /* line-height: 19.2%; */
+  letter-spacing: 0.125em;
+}
+@utility text-preset-8-bold {
+  font-family: var(--font-barlow-c);
+  font-weight: 700;
+  font-size: 1rem;
+  /* line-height: 19.2%; */
   letter-spacing: 0.125em;
 }
 @utility text-preset-9 {
