@@ -1,7 +1,11 @@
 function Crew() {
   return (
-    <div>
-      <h1 className="text-red-500">Crew</h1>
+    <div className="w-full h-screen">
+      <img
+        className="w-full h-screen"
+        src="/assets/home/background-home-desktop.jpg"
+        alt=""
+      />
     </div>
   );
 }

@@ -1,19 +1,26 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import NavLinks from "./NavLinks";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className=" fixed top-0 left-0 flex items-center justify-between w-full p-6  z-10 bg-">
+    <header className=" fixed top-0 left-0 flex items-center justify-between w-full   z-10 bg-">
       {isOpen ? (
         <div className=" fixed top-0 right-0 h-full w-64 backdrop-blur-md bg-black/40 flex  z-20 pl-8 md:hidden">
-          <NavLinks />
+          <NavLinks
+            onCloseModal={() => {
+              setIsOpen(false);
+            }}
+          />
         </div>
       ) : (
         ""
       )}
-      <div className="flex items-center justify-center">
-        <img src="/assets/shared/logo.svg" alt="" />
+      <div className="flex items-center justify-center z-30">
+        <Link to="/" className="flex items-center gap-3 group">
+          <img src="/assets/shared/logo.svg" alt="" />
+        </Link>
       </div>
       <button
         onClick={() => {
