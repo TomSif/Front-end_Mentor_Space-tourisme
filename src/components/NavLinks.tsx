@@ -13,8 +13,8 @@ interface NavLinksProps {
 
 function NavLinks({ onCloseModal }: NavLinksProps) {
   return (
-    <nav className="md:flex-row items-center flex-col z-30 flex pt-33 md:pt-0 md:backdrop-blur-md md:bg-black/10 md:h-24 lg:pl-38 lg:pr-16 w-full">
-      <ul className="md:flex-row flex-col gap-8 md:gap-12 flex text-white pl-8 md:pl-0 text-preset-8 w-full">
+    <nav className="md:flex-row items-center flex-col z-30 flex pt-33 md:pt-0 md:backdrop-blur-md md:bg-white/10 md:h-24 lg:pl-30 lg:pr-16 w-full md:pr-10">
+      <ul className="md:flex-row flex-col gap-8 md:gap-12 flex text-white pl-8 md:pl-30 text-preset-8 w-full ">
         {navLinks.map((link) => (
           <NavLink
             onClick={() => onCloseModal?.()}

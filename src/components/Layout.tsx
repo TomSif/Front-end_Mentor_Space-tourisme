@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 
 function Layout() {
   return (
-    <div>
+    <div className=" flex flex-col">
       <NavBar />
       <Outlet />
     </div>

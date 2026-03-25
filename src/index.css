@@ -50,7 +50,14 @@
   font-family: var(--font-bellfair);
   font-weight: 400;
   font-size: 9rem;
-  line-height: 172%;
+  line-height: 100%;
+  letter-spacing: 0em;
+}
+@utility text-preset-1-mobile {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 100%;
   letter-spacing: 0em;
 }
 @utility text-preset-2 {
@@ -60,11 +67,39 @@
   line-height: 114.6%;
   letter-spacing: 0em;
 }
+@utility text-preset-2-mobile {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 100%;
+  letter-spacing: 0em;
+}
+@utility text-preset-2-tablet {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 100%;
+  letter-spacing: 0em;
+}
 @utility text-preset-3 {
   font-family: var(--font-bellfair);
   font-weight: 400;
   font-size: 3.55rem;
   line-height: 64.2%;
+  letter-spacing: 0em;
+}
+@utility text-preset-3-mobile {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0em;
+}
+@utility text-preset-3-tablet {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 100%;
   letter-spacing: 0em;
 }
 @utility text-preset-4 {
@@ -74,6 +109,20 @@
   line-height: 36.7%;
   letter-spacing: 0em;
 }
+@utility text-preset-4-mobile {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 100%;
+  letter-spacing: 0em;
+}
+@utility text-preset-4-tablet {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0em;
+}
 @utility text-preset-5 {
   font-family: var(--font-barlow-c);
   font-weight: 400;
@@ -81,11 +130,25 @@
   line-height: 33.6%;
   letter-spacing: 0.14em;
 }
+@utility text-preset-5-tablet {
+  font-family: var(--font-barlow-c);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 100%;
+  letter-spacing: 15%;
+}
 @utility text-preset-6 {
   font-family: var(--font-bellfair);
   font-weight: 400;
   font-size: 1.75rem;
   line-height: 32.1%;
+  letter-spacing: 0em;
+}
+@utility text-preset-6-mobile {
+  font-family: var(--font-bellfair);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
   letter-spacing: 0em;
 }
 @utility text-preset-7 {
@@ -102,6 +165,13 @@
   /* line-height: 19.2%; */
   letter-spacing: 0.125em;
 }
+@utility text-preset-8-mobile {
+  font-family: var(--font-barlow-c);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 100%;
+  letter-spacing: 15%;
+}
 @utility text-preset-8-bold {
   font-family: var(--font-barlow-c);
   font-weight: 700;
@@ -115,4 +185,18 @@
   font-size: 1.125rem;
   line-height: 180%;
   letter-spacing: 0em;
+}
+@utility text-preset-9-mobile {
+  font-family: var(--font-barlow);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 180%;
+  letter-spacing: 0;
+}
+@utility text-preset-9-tablet {
+  font-family: var(--font-barlow);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 180%;
+  letter-spacing: 0;
 }
