@@ -43,6 +43,7 @@
   --color-white: #ffffff;
   --color-blue-300: #d0d6f9;
   --color-blue-900: #0b0d17;
+  --color-grey-border: #979797;
 }
 
 /*typography collection */
@@ -141,7 +142,7 @@
   font-family: var(--font-bellfair);
   font-weight: 400;
   font-size: 1.75rem;
-  line-height: 32.1%;
+  line-height: 100%;
   letter-spacing: 0em;
 }
 @utility text-preset-6-mobile {
@@ -199,4 +200,80 @@
   font-size: 1rem;
   line-height: 180%;
   letter-spacing: 0;
+}
+/* A modern Reset */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
 }
