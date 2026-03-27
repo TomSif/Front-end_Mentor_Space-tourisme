@@ -7,7 +7,7 @@ function Home() {
                 lg:bg-[url('/assets/home/background-home-desktop.jpg')]"
     >
       {/* CONTENT */}
-      <section className="flex-1 grid grid-cols-1 lg:grid-cols-2 items-center py-12 md:pt-56 md:pb-32 gap-12">
+      <section className="flex-1 grid grid-cols-1 lg:grid-cols-2 items-center py-12 md:pt-56 md:pb-32 gap-12 lg:max-w-277 self-center">
         {/* LEFT */}
         <article className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 max-w-lg mx-auto lg:mx-0">
           <h1 className="text-preset-9-mobile md:text-preset-5 text-blue-300">

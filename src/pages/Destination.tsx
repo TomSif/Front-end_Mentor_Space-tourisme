@@ -18,7 +18,7 @@ function Destination() {
         <div className="flex flex-col items-center justify-center w-full gap-6">
           <div className="w-full flex-col items-center ">
             <h1 className="text-center md:text-left md:self-start text-preset-6-mobile text-white ">
-              <strong className="text-preset-8-bold text-white/25 pr-6">
+              <strong className="text-preset-8-bold text-white/25 pr-6 ">
                 01
               </strong>
               PICK YOUR DESTINATION
@@ -26,7 +26,7 @@ function Destination() {
           </div>
           <div className="w-full py-6 md:py-10 flex items-center justify-center lg:pt-32 ">
             <img
-              className="w-37 md:w-75 md:h-75 h-37 lg:min-w-120 lg:min-h-120"
+              className="w-37 md:w-75 md:h-75 h-37 xl:min-w-120 xl:min-h-120"
               src={`/assets/destination/image-${activeTab.toLowerCase()}.png`}
               alt={`image of the ${activeTab}`}
             />

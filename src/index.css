@@ -86,7 +86,7 @@
   font-family: var(--font-bellfair);
   font-weight: 400;
   font-size: 3.55rem;
-  line-height: 64.2%;
+  line-height: 100%;
   letter-spacing: 0em;
 }
 @utility text-preset-3-mobile {
@@ -128,7 +128,7 @@
   font-family: var(--font-barlow-c);
   font-weight: 400;
   font-size: 1.75rem;
-  line-height: 33.6%;
+  line-height: 100%;
   letter-spacing: 0.14em;
 }
 @utility text-preset-5-tablet {
