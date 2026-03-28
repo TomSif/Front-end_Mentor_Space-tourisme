@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div className="App max-h-screen">
+    <div className="App max-h-screen bg-blue-900 overflow-hidden">
       <Routes>
         <Route element={<Layout />}>
           {/* Page Home */}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import data from "../data/data.json";
 
 function Destination() {
@@ -24,13 +25,32 @@ function Destination() {
               PICK YOUR DESTINATION
             </h1>
           </div>
-          <div className="w-full py-6 md:py-10 flex items-center justify-center lg:pt-32 ">
-            <img
-              className="w-37 md:w-75 md:h-75 h-37 xl:min-w-120 xl:min-h-120"
-              src={currentTitle?.images.webp}
-              alt={`image of the ${activeTab}`}
-            />
-          </div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: -15, scale: 0.95 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: { duration: 0.4, ease: "easeInOut" },
+              }}
+              exit={{
+                opacity: 0,
+                y: 10,
+                scale: 1.05,
+                transition: { duration: 0.3, ease: "easeOut" },
+              }}
+            >
+              <div className="w-full py-6 md:py-10 flex items-center justify-center lg:pt-32 ">
+                <img
+                  className="w-37 md:w-75 md:h-75 h-37 xl:min-w-120 xl:min-h-120"
+                  src={currentTitle?.images.webp}
+                  alt={`image of the ${activeTab}`}
+                />
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
         <div className="w-full flex  flex-col items-center max-w-lg lg:max-w-111 justify-self-center md:pt-6 lg:items-start lg:pt-32">
           <ul className="flex w-full gap-8 items-center justify-center px-10 text-preset-8-mobile md:text-preset-8 lg:items-start lg:justify-start lg:px-2">
@@ -45,32 +65,51 @@ function Destination() {
               </li>
             ))}
           </ul>
-          <h2 className="text-preset-2-mobile md:text-preset-2-tablet text-center text-white pt-6 lg:text-left">
-            {activeTab.toUpperCase()}
-          </h2>
-          {currentTitle && (
-            <p className="text-center text-preset-9-mobile md:text-preset-9-tablet text-blue-300 pt-4 md:pt-6 pb-6 lg:text-left min-h-44 lg:min-h-41">
-              {currentTitle.description}
-            </p>
-          )}
-          <div className="flex flex-col md:items-start justify-center md:grid-cols-2 md:grid border-t-2 w-full border-grey-border gap-6 pt-8 md:pt-6 lg:justify-start">
-            <dl className="flex flex-col  gap-3 items-center justify-center text-center lg:text-left lg:items-start">
-              <dt className="text-preset-7 text-blue-300">AVG. DISTANCE</dt>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: -15 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.4, ease: "easeInOut" },
+              }}
+              exit={{
+                opacity: 0,
+                y: 10,
+                transition: { duration: 0.3, ease: "easeOut" },
+              }}
+            >
+              <h2 className="text-preset-2-mobile md:text-preset-2-tablet text-center text-white pt-6 lg:text-left">
+                {activeTab.toUpperCase()}
+              </h2>
               {currentTitle && (
-                <dd className="text-preset-6 text-white">
-                  {currentTitle.distance}
-                </dd>
+                <p className="text-center text-preset-9-mobile md:text-preset-9-tablet text-blue-300 pt-4 md:pt-6 pb-6 lg:text-left min-h-44 lg:min-h-41">
+                  {currentTitle.description}
+                </p>
               )}
-            </dl>
-            <dl className="flex  flex-col  items-center justify-center gap-3 text-center lg:text-left lg:items-start">
-              <dt className="text-preset-7 text-blue-300">EST. TRAVEL TIME</dt>
-              {currentTitle && (
-                <dd className="text-preset-6 text-white">
-                  {currentTitle.travel.toUpperCase()}
-                </dd>
-              )}
-            </dl>
-          </div>
+              <div className="flex flex-col md:items-start justify-center md:grid-cols-2 md:grid border-t-2 w-full border-grey-border gap-6 pt-8 md:pt-6 lg:justify-start">
+                <dl className="flex flex-col  gap-3 items-center justify-center text-center lg:text-left lg:items-start">
+                  <dt className="text-preset-7 text-blue-300">AVG. DISTANCE</dt>
+                  {currentTitle && (
+                    <dd className="text-preset-6 text-white">
+                      {currentTitle.distance}
+                    </dd>
+                  )}
+                </dl>
+                <dl className="flex  flex-col  items-center justify-center gap-3 text-center lg:text-left lg:items-start">
+                  <dt className="text-preset-7 text-blue-300">
+                    EST. TRAVEL TIME
+                  </dt>
+                  {currentTitle && (
+                    <dd className="text-preset-6 text-white">
+                      {currentTitle.travel.toUpperCase()}
+                    </dd>
+                  )}
+                </dl>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </section>
     </main>
