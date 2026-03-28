@@ -27,7 +27,7 @@ function Destination() {
           <div className="w-full py-6 md:py-10 flex items-center justify-center lg:pt-32 ">
             <img
               className="w-37 md:w-75 md:h-75 h-37 xl:min-w-120 xl:min-h-120"
-              src={`/assets/destination/image-${activeTab.toLowerCase()}.png`}
+              src={currentTitle?.images.webp}
               alt={`image of the ${activeTab}`}
             />
           </div>

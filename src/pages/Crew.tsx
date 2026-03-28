@@ -60,7 +60,7 @@ function Crew() {
           <div className="flex flex-col items-center   w-68 md:w-111 min-h-85 aspect-4/3 lg:aspect-3/4 z-30 ">
             <img
               className="w-auto h-auto object-cover mask-b-from-75% md:mask-b-from-45% lg:mask-b-from-80%"
-              src={`/assets/crew/image-${activeTab.toLowerCase().replace(" ", "-")}.webp`}
+              src={currentMember?.images.webp}
               alt={`image of the ${activeTab}`}
             />
           </div>
