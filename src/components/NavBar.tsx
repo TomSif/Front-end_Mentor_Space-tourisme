@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <header className=" fixed top-0 left-0 flex items-center justify-between w-full  max-w-screen z-10 p-6  md:p-0 md:pl-10">
       {isOpen ? (
-        <div className=" fixed top-0 right-0 h-full w-64 backdrop-blur-md bg-black/40 flex  z-20 pl-8 md:hidden">
+        <div className=" fixed top-0 right-0 h-full w-64 backdrop-blur-md bg-black/40 flex  z-30 pl-8 md:hidden">
           <NavLinks
             onCloseModal={() => {
               setIsOpen(false);

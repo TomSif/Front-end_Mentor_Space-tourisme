@@ -8,7 +8,7 @@ function Destination() {
   );
   return (
     <main
-      className="min-h-screen flex flex-col items-center bg-cover bg-center px-6 md:px-10 lg:px-40 lg:justify-center
+      className="min-h-screen  flex flex-col items-center bg-cover bg-center px-6 md:px-10 lg:px-40 lg:justify-center
                 bg-[url('/assets/home/background-home-mobile.jpg')]
                 md:bg-[url('/assets/home/background-home-tablet.jpg')]
                 lg:bg-[url('/assets/home/background-home-desktop.jpg')]"
@@ -49,7 +49,7 @@ function Destination() {
             {activeTab.toUpperCase()}
           </h2>
           {currentTitle && (
-            <p className="text-center text-preset-9-mobile md:text-preset-9-tablet text-blue-300 pt-4 md:pt-6 pb-6 lg:text-left">
+            <p className="text-center text-preset-9-mobile md:text-preset-9-tablet text-blue-300 pt-4 md:pt-6 pb-6 lg:text-left min-h-44 lg:min-h-41">
               {currentTitle.description}
             </p>
           )}

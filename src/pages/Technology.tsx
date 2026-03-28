@@ -7,7 +7,7 @@ function Technology() {
 
   return (
     <main
-      className="overflow-hidden min-h-screen flex flex-col items-center bg-cover bg-center px-6 md:px-10 lg:px-0 lg:items-end
+      className="overflow-hidden min-h-screen max-h-screen flex flex-col items-center bg-cover bg-center px-6 md:px-10 lg:px-0 lg:items-end
                 bg-[url('/assets/technology/background-technology-mobile.jpg')]
                 md:bg-[url('/assets/technology/background-technology-tablet.jpg')]
                 lg:bg-[url('/assets/technology/background-technology-desktop.jpg')]"
@@ -52,7 +52,7 @@ function Technology() {
               <ul className="flex w-full gap-4 lg:gap-8 items-center justify-center lg:flex-col lg:w-auto">
                 {data.technology.map((tab, index) => (
                   <li
-                    className="h-10  w-10 z-10 relative flex md:w-14 md:h-14 lg:w-20 lg:h-20"
+                    className="h-10  w-10  relative flex md:w-14 md:h-14 lg:w-20 lg:h-20"
                     key={index}
                   >
                     <input
@@ -65,7 +65,7 @@ function Technology() {
                       className={`w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full bg-transparent  border-2 checked:bg-white hover:bg-white/70 transition-all duration-300 ease-in  appearance-none  ${tab.name === activeTab ? "border-white" : "border-grey-border"}`}
                     />
                     <label
-                      className={`absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-preset-4-mobile  md:text-preset-4-tablet lg:text-preset-4 z-40 ${tab.name === activeTab ? "text-blue-900 " : "text-white"}`}
+                      className={`absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-preset-4-mobile  md:text-preset-4-tablet lg:text-preset-4  ${tab.name === activeTab ? "text-blue-900 " : "text-white"}`}
                       htmlFor={tab.name}
                     >
                       {index + 1}
