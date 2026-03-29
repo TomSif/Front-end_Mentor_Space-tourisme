@@ -11,7 +11,7 @@
 [![React Router](https://img.shields.io/badge/react_router_v7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
 [![Framer Motion](https://img.shields.io/badge/framer_motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-![Design preview for the Space Tourism Website coding challenge](/images/desktop-crew.png)
+![Design preview for the Space Tourism Website coding challenge](./public/images/desktop-destination.png)
 
 ### 🌐 Live Demo:
 
@@ -50,7 +50,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](/images/desktop-destination.png)
+![Desktop](./public/images/desktop-crew.png)
 
 ### Links
 
