@@ -6,6 +6,12 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <header className=" fixed top-0 left-0 flex items-center justify-between w-full  max-w-screen z-10 p-6  md:p-0 md:pl-10 lg:pt-10">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-blue-900 focus:px-4 focus:py-2"
+      >
+        Skip to main content
+      </a>
       {isOpen ? (
         <div className=" fixed top-0 right-0 h-full w-64 backdrop-blur-2xl bg-black/15 flex  z-30 pl-8 md:hidden">
           <NavLinks
@@ -28,6 +34,8 @@ function NavBar() {
       </div>
       <button
         type="button"
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
         aria-label={isOpen ? "Close the menu" : "Open the menu"}
         onClick={() => {
           setIsOpen((prev) => !prev);
@@ -40,7 +48,7 @@ function NavBar() {
           <img src="/assets/shared/icon-hamburger.svg" alt="" />
         )}
       </button>
-      <div className="md:flex hidden relative ">
+      <div className="md:flex hidden relative " id="mobile-menu">
         <div
           role="presentation"
           aria-hidden="true"

@@ -8,6 +8,7 @@ function Crew() {
   const currentMember = data.crew.find((member) => member.name === activeTab);
   return (
     <main
+      id="main-content"
       className="overflow-hidden min-h-screen max-h-screen flex flex-col items-center bg-cover bg-center px-6 md:px-10 lg:px-40 lg:justify-center lg:pt-24
                 bg-[url('/assets/crew/background-crew-mobile.jpg')]
                 md:bg-[url('/assets/crew/background-crew-tablet.jpg')]

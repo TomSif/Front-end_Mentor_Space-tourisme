@@ -9,6 +9,7 @@ function Destination() {
   );
   return (
     <main
+      id="main-content"
       className="min-h-screen  flex flex-col items-center bg-cover bg-center px-6 md:px-10 lg:px-40 lg:justify-center
                 bg-[url('/assets/home/background-home-mobile.jpg')]
                 md:bg-[url('/assets/home/background-home-tablet.jpg')]

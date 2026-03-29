@@ -9,6 +9,7 @@ function Technology() {
 
   return (
     <main
+      id="main-content"
       className="overflow-hidden min-h-screen max-h-screen flex flex-col items-center bg-cover bg-center px-6 md:px-10 lg:px-0 lg:items-end 
                 bg-[url('/assets/technology/background-technology-mobile.jpg')]
                 md:bg-[url('/assets/technology/background-technology-tablet.jpg')]
