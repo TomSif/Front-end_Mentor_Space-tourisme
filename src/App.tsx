@@ -7,7 +7,7 @@ import Destination from "./pages/Destination";
 import Crew from "./pages/Crew";
 import Technology from "./pages/Technology";
 import NotFound from "./pages/NotFound";
-import NavBar from "../src/components/NavBar";
+import NavBar from "./components/NavBar";
 
 function App() {
   const location = useLocation();

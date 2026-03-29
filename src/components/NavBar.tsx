@@ -41,7 +41,11 @@ function NavBar() {
         )}
       </button>
       <div className="md:flex hidden relative ">
-        <div className="hidden xl:flex h-0.5 bg-white/20 top-1/2 left-0 max-w-[37vw] w-[37vw] transform -transalte-y-1/2 -translate-x-[35vw] z-80 absolute opacity-70 blur-0.65"></div>
+        <div
+          role="presentation"
+          aria-hidden="true"
+          className="hidden xl:flex h-0.5 bg-white/20 top-1/2 left-0 max-w-[37vw] w-[37vw] transform -transalte-y-1/2 -translate-x-[35vw] z-80 absolute opacity-70 blur-0.65"
+        ></div>
 
         <NavLinks />
       </div>
