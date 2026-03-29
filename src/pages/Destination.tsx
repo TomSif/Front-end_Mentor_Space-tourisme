@@ -18,8 +18,8 @@ function Destination() {
       <section className="grid grid-cols-1 lg:grid-cols-2 items-center  justify-center pt-28 md:pt-34 md:pb-32 gap-8 w-full">
         <div className="flex flex-col items-center justify-center w-full gap-6">
           <div className="w-full flex-col items-center ">
-            <h1 className="text-center md:text-left md:self-start text-preset-6-mobile text-white ">
-              <strong className="text-preset-8-bold text-white/25 pr-6 ">
+            <h1 className="text-center md:text-left md:self-start text-preset-6-mobile lg:text-preset-5 text-white ">
+              <strong className="text-preset-8-bold text-white/25 pr-6 lg:text-[1.75rem]">
                 01
               </strong>
               PICK YOUR DESTINATION

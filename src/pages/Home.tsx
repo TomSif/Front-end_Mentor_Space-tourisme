@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router";
+
 function Home() {
+  const navigate = useNavigate();
   return (
     <main
       className="min-h-screen flex flex-col bg-cover bg-center px-6 md:px-10 lg:px-40
@@ -28,7 +31,10 @@ function Home() {
 
         {/* RIGHT */}
         <div className="flex justify-center lg:justify-end items-center">
-          <button className="rounded-full w-36 h-36 md:w-68 md:h-68 bg-white text-blue-900 flex items-center justify-center text-preset-4-mobile md:text-preset-4 transition-shadow duration-300 ease-in-out shadow-[0_0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)]">
+          <button
+            onClick={() => navigate("/destination")}
+            className="rounded-full w-36 h-36 md:w-68 md:h-68 bg-white text-blue-900 flex items-center justify-center text-preset-4-mobile md:text-preset-4 transition-shadow duration-300 ease-in-out shadow-[0_0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)]"
+          >
             EXPLORE
           </button>
         </div>
