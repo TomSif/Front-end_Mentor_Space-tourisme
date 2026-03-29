@@ -59,6 +59,7 @@ function Crew() {
             </motion.div>
           </AnimatePresence>
           <fieldset className="lg:absolute lg:bottom-0 lg:-translate-y-15">
+            <legend className="sr-only">Select a crew member</legend>
             <ul className="flex w-full gap-4 lg:gap-10 items-center justify-center  ">
               {data.crew.map((tab, index) => (
                 <li className="h3 lg:h5" key={index}>
@@ -67,7 +68,7 @@ function Crew() {
                     name={tab.name}
                     value={tab.name}
                     checked={activeTab === tab.name}
-                    type="Radio"
+                    type="radio"
                     onChange={() => setActiveTab(tab.name)}
                     className="w-2.5 h-2.5 lg:w-4 lg:h-4 rounded-full bg-grey-border checked:bg-white hover:bg-white/70 transition-all duration-300 ease-in  appearance-none"
                   />

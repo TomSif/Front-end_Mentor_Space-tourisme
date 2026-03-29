@@ -24,7 +24,7 @@ function Technology() {
             SPACE LAUNCH 101
           </h1>
         </div>
-        <div className="w-full flex  gap-8 flex-col items-center  pt-16 md:pt-6  lg:pt-32  lg:grid lg:grid-rows-1 lg:grid-cols-[1fr_1fr] lg:col-span-2 lg:items-center">
+        <div className="w-full flex  gap-8 flex-col items-center  pt-16 md:pt-6  lg:pt-20  lg:grid lg:grid-rows-1 lg:grid-cols-[1fr_1fr] lg:col-span-2 lg:items-center">
           <div className="overflow-hidden min-w-screen lg:min-w-0 flex flex-col items-center lg:items-end  md:h-100 lg:h-150 lg:col-start-2 ">
             <AnimatePresence mode="wait">
               <motion.div
@@ -70,6 +70,7 @@ function Technology() {
           </div>
           <div className="flex flex-col items-center w-full h-auto lg:col-start-1 lg:row-start-1 lg:flex-row lg:items-center gap-10 lg:gap-16">
             <fieldset className="lg:col-start-1">
+              <legend className="sr-only">Select a technology</legend>
               <ul className="flex w-full gap-4 lg:gap-8 items-center justify-center lg:flex-col lg:w-auto">
                 {data.technology.map((tab, index) => (
                   <li
@@ -81,7 +82,7 @@ function Technology() {
                       name={tab.name}
                       value={tab.name}
                       checked={activeTab === tab.name}
-                      type="Radio"
+                      type="radio"
                       onChange={() => setActiveTab(tab.name)}
                       className={`w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full bg-transparent  border-2 checked:bg-white hover:bg-white/70 transition-all duration-300 ease-in  appearance-none  ${tab.name === activeTab ? "border-white" : "border-grey-border"}`}
                     />

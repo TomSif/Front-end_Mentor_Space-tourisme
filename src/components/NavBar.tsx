@@ -18,7 +18,11 @@ function NavBar() {
         ""
       )}
       <div className="flex items-center justify-center z-30 ">
-        <Link to="/" className="flex items-center gap-3 group">
+        <Link
+          to="/"
+          aria-label="Go to home page"
+          className="flex items-center gap-3 group"
+        >
           <img src="/assets/shared/logo.svg" alt="" />
         </Link>
       </div>
