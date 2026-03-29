@@ -27,18 +27,17 @@ function NavBar() {
         </Link>
       </div>
       <button
+        type="button"
+        aria-label={isOpen ? "Close the menu" : "Open the menu"}
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}
         className="flex items-center justify-between md:hidden z-30"
       >
         {isOpen ? (
-          <img src="/assets/shared/icon-close.svg" alt="open menu button" />
+          <img src="/assets/shared/icon-close.svg" alt="" />
         ) : (
-          <img
-            src="/assets/shared/icon-hamburger.svg"
-            alt="close menu button"
-          />
+          <img src="/assets/shared/icon-hamburger.svg" alt="" />
         )}
       </button>
       <div className="md:flex hidden relative ">

@@ -1,13 +1,11 @@
 import { Outlet } from "react-router";
 import { motion } from "framer-motion";
-import NavBar from "./NavBar";
 
 function Layout() {
   const isDesktop = window.innerWidth >= 768;
   const slideX = isDesktop ? 1200 : 0;
   return (
     <div className=" flex flex-col">
-      <NavBar />
       <motion.div
         key={location.pathname}
         initial={{ x: slideX, opacity: isDesktop ? 1 : 0 }}
